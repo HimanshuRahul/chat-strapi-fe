@@ -1,0 +1,58 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box; 
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-username {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  .navbar-logout {
+    background-color: #20031e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-logout:hover {
+    background-color: #3d0932;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-content {
+      flex-direction: column;
+    }
+  
+    .navbar-username {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-logout {
+      padding: 8px 16px;
+    }
+  }
+  
